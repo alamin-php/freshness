@@ -1,16 +1,258 @@
-body{
+body {
     font-family: 'Merriweather', serif;
-}
-p{
+    font-size: 15px;
     font-weight: 400;
-}
-h1,h2,h3,h4,h5,h6{
-    font-weight: 700;
+    line-height: 1.6em;
 }
 
+p {
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+input[type="submit"] {
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+a.readmore {
+    background: #3bafbe;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: normal;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+a.readmore:hover {
+    background: #262626;
+}
+
+
 /* HEADER CSS */
-#header-area{
+
+#header-area {
     border-top: 5px solid #3bafbe;
     border-bottom: 1px solid #dddddd;
     padding: 20px 0;
+}
+
+.social {
+    width: 100%;
+    clear: both;
+    margin-bottom: 20px;
+}
+
+.social ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.social ul li {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.social ul li a {
+    background: #1f1f1f;
+    color: #ffffff;
+    width: 35px;
+    height: 35px;
+    display: block;
+    text-align: center;
+    padding-top: 5px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.social ul li a:hover {
+    background: #ee802f;
+}
+
+
+/* Search area css */
+
+.search-area {
+    width: 100%;
+    text-align: right;
+    clear: both;
+    margin-bottom: 40px;
+}
+
+.search-area input {
+    background: #333333;
+    border: 0px solid;
+    outline: 0;
+    padding: 8px;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.search-area input[type="submit"] {
+    background: #3bafbe;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.search-area input[type="submit"]:hover {
+    background: #4dc1d0;
+    cursor: pointer;
+}
+
+
+/* Main Menu CSS */
+
+#main-menu {
+    text-align: right;
+}
+
+#main-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#main-menu ul li {
+    display: inline-block;
+}
+
+#main-menu ul li a {
+    color: #999999;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 5px 15px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+#main-menu ul li a:hover {
+    color: #3bafbe;
+}
+
+#main-menu ul li .active {
+    color: #3bafbe;
+}
+
+
+/* BANNAR AREA CSS STYLES */
+
+#banner-area {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+#bannar-area .item {
+    width: 100%;
+    overflow: hidden;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.banner-text {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.banner-table {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.bannar-aling {
+    display: table-cell;
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
+}
+
+.bannar-textarea {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.main-banner {
+    width: 50%;
+    float: right;
+}
+
+
+/* SLIDER FIX */
+
+.bx-wrapper .bx-controls-direction a {
+    display: none;
+}
+
+.bx-wrapper .bx-pager {
+    text-align: right;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active,
+.bx-wrapper .bx-pager.bx-default-pager a:focus {
+    background: #3bafbe;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+    border: 4px solid #3bafbe;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: none;
+}
+
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto {
+    position: absolute;
+    bottom: 13px;
+    width: 100%;
+}
+
+
+/* SERVICES AREA CSS STYLES */
+
+#intro-area {
+    padding-bottom: 40px;
+}
+
+#intro-area h3 {
+    font-size: 16px;
+    color: #4a4a4a;
+    margin-top: 15px;
+}
+
+#intro-area img {
+    width: 100%;
+    height: auto;
+}
+
+#intro-area p {
+    color: #999999;
 }
