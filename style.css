@@ -24,6 +24,9 @@ a {
     text-decoration: none;
     transition: 0.5s;
 }
+a:hover {
+    text-decoration: none;
+}
 
 input[type="submit"] {
     transition: 0.5s;
@@ -44,6 +47,28 @@ a.readmore {
 
 a.readmore:hover {
     background: #262626;
+}
+
+/* INPUT AREA CSS COMMON */
+
+input {
+    background: #333333;
+    border: 0px solid;
+    outline: 0;
+    padding: 8px;
+    color: #fff;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background: #3bafbe;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+input[type="submit"]:hover {
+    background: #4dc1d0;
+    cursor: pointer;
 }
 
 
@@ -97,27 +122,6 @@ a.readmore:hover {
     clear: both;
     margin-bottom: 40px;
 }
-
-.search-area input {
-    background: #333333;
-    border: 0px solid;
-    outline: 0;
-    padding: 8px;
-    color: #fff;
-    border-radius: 5px;
-}
-
-.search-area input[type="submit"] {
-    background: #3bafbe;
-    text-transform: uppercase;
-    transition: 0.5s;
-}
-
-.search-area input[type="submit"]:hover {
-    background: #4dc1d0;
-    cursor: pointer;
-}
-
 
 /* Main Menu CSS */
 
@@ -236,7 +240,7 @@ a.readmore:hover {
 }
 
 
-/* SERVICES AREA CSS STYLES */
+/* INTRO AREA CSS STYLES */
 
 #intro-area {
     padding-bottom: 40px;
@@ -251,8 +255,118 @@ a.readmore:hover {
 #intro-area img {
     width: 100%;
     height: auto;
+    display: block;
 }
 
 #intro-area p {
     color: #999999;
+}
+/* SERVICES AREA CSS STYLES */
+#services-area{
+    border-top: 1px solid #dddddd;
+    padding: 40px 0;
+}
+.col-md-10 h4 {
+    font-size: 22px;
+    font-weight: 400;
+	line-height: 1.6em;
+	text-align: center;
+	font-style: italic;
+	color: #666;
+	margin-bottom: 40px;
+}
+.col-md-4 img {
+	float: left;
+	margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 3px;
+    border: 1px solid #dddddd;
+}
+.col-md-4 {
+    margin-bottom: 20px;
+}
+.col-md-4 h4 {
+	font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.col-md-4 h4 a {
+	color: #3bafbe;
+}
+.col-md-4 p {
+	font-size: 12px;
+    color: #848c92;
+    margin-bottom: 0;
+}
+
+/* FOOTER AREA CSS */
+#footer-area {
+	background: #252525;
+	color: #fff;
+	padding: 40px 0;
+}
+#footer-area h3 {
+	font-size: 20px;
+	color: #fff;
+	font-weight: 400;
+}
+#footer-area p {
+	font-size: 12px;
+	color: #999999;
+}
+#footer-area .email {
+	color: #3bafbe;
+}
+#footer-area ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#footer-area ul li {
+	display: block;
+	margin-bottom: 5px;
+	border-bottom: 1px solid #3A3A3A;
+}
+#footer-area a {
+	color: #3bafbe;
+	padding: 5px;
+	display: block;
+}
+#footer-area strong {
+	font-size: 13px;
+	color: #999999;
+}
+#footer-area .read {
+	text-align: right;
+}
+#footer-area input{
+    margin-bottom: 5px;
+}
+#copyright {
+	background: #1a1a1a;
+    color: #999999;
+    padding: 20px 0;
+}
+#copyright p{
+    margin: 0;
+    font-size: 12px;
+}
+#copyright .col-md-6:last-child{
+    text-align: right;
+}
+
+/* RESPONSIVE CSS */
+@media only screen and (min-width:200px) and (max-width:768px){
+    .social ul {
+        text-align: center;
+    }
+    .logo {
+        float: none;
+        width: 200px;
+        margin: 0 auto 20px;
+        text-align: center;
+    }
+    #header-area .col-md-9 {
+        display: none;
+    }
 }
