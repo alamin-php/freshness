@@ -70,6 +70,9 @@ input[type="submit"]:hover {
     background: #4dc1d0;
     cursor: pointer;
 }
+.slicknav_menu {
+	display: none;
+}
 
 
 /* HEADER CSS */
@@ -369,4 +372,43 @@ input[type="submit"]:hover {
     #header-area .col-md-9 {
         display: none;
     }
+    .slicknav_menu {
+        display: block;
+    }
+    .bannar-textarea {
+        width: 90%;
+    }
+    
+    .main-banner {
+        width: 80%;
+    }
+    .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+        display: none;
+    }
+    .slicknav_nav li{
+        border-bottom: 1px solid #ddd;
+    }
+    .slicknav_nav li:last-child{
+        border-bottom: 0px solid;
+    }
+    #intro-area .col-md-4{
+        text-align: center;
+        margin-bottom: 10px;
+        box-shadow: 1px 1px 5px 5px #ddd;
+        padding: 10px 0;
+}
+.col-md-10 h4 {
+	font-size: 16px;
+}
+#footer-area input {
+	margin: 10px auto;
+	display: block;
+	width: 90%;
+}
+#copyright .col-md-6:last-child {
+	text-align: center;
+}
+#copyright p {
+	text-align: center;
+}
 }
